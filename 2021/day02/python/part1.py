@@ -11,7 +11,7 @@ def main(lines):
     for line in lines:
         line = line.split()
         m[line[0]] = m[line[0]] + int(line[1])
-
+    
     return m['forward'] * (m['down'] - m['up'])
 
 
